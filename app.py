@@ -189,7 +189,7 @@ if df is not None:
         # Download-Button
         txt_data = convert_df_to_txt(frasy_export)
         download_clicked = st.download_button(
-            label="Download gefilterte Daten als .txt",
+            label="Download der Frasy-Daten als .txt",
             data=txt_data,
             file_name=dateiname,
             mime="text/plain"
