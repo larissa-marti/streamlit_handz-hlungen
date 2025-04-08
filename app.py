@@ -143,7 +143,7 @@ if df is not None:
         frasy_export.loc[frasy_export.duplicated(subset=["ZUGNUMMER_NEW[6]", "DATUM[8]"], keep="last"), "ANABCODE[1]"] = 1
 
         # Reduktion durch ZP-Faktor
-        zp_faktor = 0.920
+        zp_faktor = 0.950
 
         frasy_export['EINCLASS2[4]'] = np.ceil(frasy_export['EINCLASS2[4]'] * zp_faktor)
         frasy_export['AUSCLASS2[4]'] = np.ceil(frasy_export['AUSCLASS2[4]'] * zp_faktor)
